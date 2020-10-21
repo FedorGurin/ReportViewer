@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="box_checked_enabled">icons/box_checked_enabled.png</file>
+        <file alias="box_unchecked_enabled">icons/box_unchecked_enabled.png</file>
+        <file alias="file_open">icons/file_open.png</file>
+        <file alias="folder">icons/folder.png</file>
+        <file alias="icon_Tools">icons/icon_Tools.png</file>
+        <file alias="open_folder">icons/open_folder.png</file>
+        <file alias="paste">icons/paste.png</file>
+        <file alias="standardbutton-delete-128">icons/standardbutton-delete-128.png</file>
+        <file alias="color_fonts_dialog">icons/color_fonts_dialog.png</file>
+        <file alias="ssCircle">icons/ssCircle.png</file>
+        <file alias="ssCross">icons/ssCross.png</file>
+        <file alias="ssCrossCircle">icons/ssCrossCircle.png</file>
+        <file alias="ssCrossSquare">icons/ssCrossSquare.png</file>
+        <file alias="ssDiamond">icons/ssDiamond.png</file>
+        <file alias="ssDisc">icons/ssDisc.png</file>
+        <file alias="ssDot">icons/ssDot.png</file>
+        <file alias="ssPeace">icons/ssPeace.png</file>
+        <file alias="ssPlus">icons/ssPlus.png</file>
+        <file alias="ssPlusCircle">icons/ssPlusCircle.png</file>
+        <file alias="ssPlusSquare">icons/ssPlusSquare.png</file>
+        <file alias="ssSquare">icons/ssSquare.png</file>
+        <file alias="ssStar">icons/ssStar.png</file>
+        <file alias="ssTriangle">icons/ssTriangle.png</file>
+        <file alias="ssTriangleInverted">icons/ssTriangleInverted.png</file>
+        <file alias="face-smile">icons/face-smile.png</file>
+        <file alias="QCPGraph">icons/QCPGraph.png</file>
+        <file alias="bomb">icons/bomb.png</file>
+    </qresource>
+</RCC>
