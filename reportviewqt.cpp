@@ -809,7 +809,7 @@ void reportviewQt::slotBeforeReplot()
         if(listParams.at(i)->cbox->isChecked())
         {
             int indx = listParams.at(i)->getGraph()->findBegin(coordX,true);
-            double y_graph = listParams.at(i)->getGraph()->data().value->at(indx)->value;
+            double y_graph ;//= listParams.at(i)->getGraph()->data().value->at(indx)->value;
             listParams.at(i)->edit_val->setText(QString("%1").arg(y_graph));//(listParams.at(i)->currTracerValue->text());
         }
         else
