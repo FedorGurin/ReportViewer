@@ -27,6 +27,7 @@ reportviewQt::reportviewQt(QWidget *parent) :
     listParams.clear();
     srand(QDateTime::currentDateTime().toTime_t());
     coordX = 0.;
+   // ui->customplot->setOpenGl(true);
     //! Инициализация осей
     ui->customplot->xAxis->setLabel("Время, с");
 //    ui->customplot->yAxis->setSelectableParts(QCPAxis::spNone);

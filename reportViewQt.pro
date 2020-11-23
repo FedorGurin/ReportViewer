@@ -4,11 +4,13 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui widgets  printsupport
 
- DEFINES += QCUSTOMPLOT_USE_OPENGL
+#DEFINES += QCUSTOMPLOT_USE_OPENGL
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+#LIBS += -lOpengl32
+
+#greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = reportViewQt
 TEMPLATE = app
