@@ -5,7 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui widgets  printsupport
-
+CONFIG += debug_and_release c++11
+CONFIG += build_all
 #DEFINES += QCUSTOMPLOT_USE_OPENGL
 
 #LIBS += -lOpengl32
