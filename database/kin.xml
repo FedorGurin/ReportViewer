@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<data>
+  <pmodule isDisplay="1" displayName="Кинематика"  idName="Kin" comment="---">
+    <sio isDisplay="1" displayName="Рабочие параметры" idName="Work" comment="---">
+      <param isDisplay="1" displayName="Gamma" unit="рад" type="double" comment="Угол крена" acc="5" howElements="1" idName="Gamma" />
+      <param isDisplay="1" displayName="Psi" unit="рад" type="double" comment="Угол Курса" acc="5" howElements="1" idName="Psi" />
+      <param isDisplay="1" displayName="Tan" unit="рад" type="double" comment="Угол тангажа" acc="5" howElements="1" idName="Tan" />
+      <struct isDisplay="1" howElements="1" comment="Переход от земной СК к связанной СК(столбец;строка)" unit="матрица" displayName="Mpsi" idName="mPsi">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="Переход от земной СК к связанной СК(столбец;строка)" displayName="Mgamma" idName="Mgamma">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="Переход от земной СК к связанной СК(столбец;строка)" displayName="mTan" idName="mTan">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="Результирующая матрица перехода между связанной и земной СК" displayName="Mc" idName="Mc">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" unit="вектор" comment="Координаты объекта в земной СК, м" displayName="c_g" idName="c_g">
+        <param isDisplay="1" displayName="x" unit="м" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <struct isDisplay="1" howElements="1" unit="вектор" comment="&lt;b&gt;Координаты&lt;/b&gt; старта объекта в земной СК, м" displayName="c_g&lt;b&gt;0&lt;/b&gt;" idName="c_g0">
+        <param isDisplay="1" displayName="x" unit="м" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <struct isDisplay="1" howElements="1" unit=" вектор" comment="Производные координат(относительно земной СК)" displayName="c_g0_dot" idName="c_g0_dot">
+        <param isDisplay="1" displayName="x" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <struct isDisplay="1" howElements="1" unit="вектор" comment="проекции вектора путевой скорости относительно нормальной земной СК м/с в момент старта" displayName="vg0" idName="vg0">
+        <param isDisplay="1" displayName="x" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <param isDisplay="1" displayName="fi" unit="рад" type="double" comment="Путевой угол" acc="5" howElements="1" idName="fi" />
+      <param isDisplay="1" displayName="unt" unit="рад" type="double" comment="Угол наклона траектории" acc="5" howElements="1" idName="unt" />
+      <struct isDisplay="1" howElements="1" comment="" displayName="Mfi" idName="matFi">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="" displayName="Munt" idName="matUnt">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="Результирующая матрица перехода в траекторную СК из нормальной земной СК(столбец;строка)" displayName="Mt" idName="Mt" unit="матрица">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <param isDisplay="1" displayName="fi_geo" unit="рад" type="double" comment="Текущая широта объекта, рад" acc="5" howElements="1" idName="fi_geo" />
+      <param isDisplay="1" displayName="lam_geo" unit="рад" type="double" comment="Текущая долгота, рад" acc="5" howElements="1" idName="lam_geo" />
+      <param isDisplay="1" displayName="fi_geo0" unit="рад" type="double" comment="Широта точки старта, рад" acc="5" howElements="1" idName="fi_geo0" />
+      <param isDisplay="1" displayName="lam_geo0" unit="рад" type="double" comment="Долгота точки старта, рад" acc="5" howElements="1" idName="lam_geo0" />
+      <param isDisplay="1" displayName="alfa" unit="рад" type="double" comment="Угол атаки" acc="5" howElements="1" idName="alfa" />
+      <param isDisplay="1" displayName="beta" unit="рад" type="double" comment="Угол скольжения" acc="5" howElements="1" idName="beta" />
+      <struct isDisplay="1" howElements="1" comment="Матрица перехода от скоростной СК к связанной СК(столбец;строка)" displayName="Ms" idName="Ms">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" unit="матрица" comment="" displayName="MAlfa" idName="matAlfa">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" unit="матрица" comment="" displayName="Mbeta" idName="matBeta">
+        <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="" acc="5" howElements="9" idName="M" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="Проекции вектора скорости ветра относительно земной СК,  м/с" displayName="wg" idName="wg">
+        <param isDisplay="1" displayName="x" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="Текущие угловые скорости относительно связанной СК, рад/сек" displayName="omega" idName="omega">
+        <param isDisplay="1" displayName="x" unit="рад/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="рад/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="рад/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <struct isDisplay="1" howElements="1" comment="Проекции вектора воздушной скорости" displayName="vs" idName="vs">
+        <param isDisplay="1" displayName="x" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <param isDisplay="1" displayName="Vs" unit="м/с" type="double" comment="Модуль вектора воздушной скорости" acc="5" howElements="1" idName="Vs" />
+      <struct isDisplay="1" howElements="1" comment="Проекции вектора путевой скорости относительно нормальной земной СК м/с" displayName="vg" idName="vg">
+        <param isDisplay="1" displayName="x" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <param isDisplay="1" displayName="Vg" unit="м/с" type="double" comment="Модуль вектора путевой скорости" acc="5" howElements="1" idName="Vg" />
+      <struct isDisplay="1" howElements="1" comment="Проекции вектора воздушной скорости в связанной СК самолета, м/с" displayName="vc" idName="vc">
+        <param isDisplay="1" displayName="x" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <param isDisplay="1" displayName="Vc" unit="м/с" type="double" comment="Модуль вектора воздушной скорости" acc="5" howElements="1" idName="vc" />
+      <struct isDisplay="1" howElements="1" comment="проекции вектора путевой скорости в траекторной СК" displayName="vtr" idName="vtr">
+        <param isDisplay="1" displayName="x" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+      <param isDisplay="1" displayName="Vtr" unit="м/с" type="double" comment="Модуль вектора скорости в траекторной СК" acc="5" howElements="1" idName="Vtr" />
+      <param isDisplay="1" displayName="M" unit="б/р" type="double" comment="Число Маха" acc="5" howElements="1" idName="Maxa" />
+      <param isDisplay="1" displayName="Vpr" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="Vpr" />
+      <param isDisplay="1" displayName="Vgg" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="Vgg" />
+      <param isDisplay="1" displayName="vgg" unit="м/с" type="double" comment="" acc="5" howElements="3" idName="vgg" />
+      <param isDisplay="1" displayName="vgc" unit="м/с" type="double" comment="" acc="5" howElements="3" idName="vgc" />
+      <param isDisplay="1" displayName="omega_min" unit="рад/с" type="double" comment="" acc="5" howElements="3" idName="omega_min" />
+      <param isDisplay="1" displayName="omega_max" unit="рад/с" type="double" comment="" acc="5" howElements="3" idName="omega_max" />
+      <param isDisplay="1" displayName="omega_p" unit="рад/с" type="double" comment="" acc="5" howElements="3" idName="omega_p" />
+      <param isDisplay="1" displayName="n_a" unit="б/р" type="double" comment="" acc="5" howElements="3" idName="n_a" />
+      <param isDisplay="1" displayName="n_c" unit="б/р" type="double" comment="" acc="5" howElements="3" idName="n_c" />
+      <param isDisplay="1" displayName="n_g" unit="б/р" type="double" comment="" acc="5" howElements="3" idName="n_g" />
+      <param isDisplay="1" displayName="n_tr" unit="б/р" type="double" comment="" acc="5" howElements="3" idName="n_tr" />
+
+    </sio>
+  </pmodule>
+</data>

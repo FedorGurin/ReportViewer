@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<data>
+  <pmodule isDisplay="1" displayName="УПАЗ(лев)"  idName="UPAZ_L" comment="---">
+    <sio isDisplay="1" displayName="Настроечные параметры" idName = "Setup" comment="---">
+      <param isDisplay="1" displayName="Турбулентность" unit="признак" type="uint8_t" comment="Турбулентность" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>     
+	  <param isDisplay="1" displayName="Колебания конуса" unit="признак" type="uint8_t" comment="Колебания конуса" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param> 
+	  <param isDisplay="1" displayName="Аэродинамический сдвиг" unit="признак" type="uint8_t" comment="Аэродинамический сдвиш" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>
+	  <param isDisplay="1" displayName="Касание конуса" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>
+	   <param isDisplay="1" displayName="Выключение УПАЗа" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	   </param>
+	   <param isDisplay="1" displayName="Масштаб турбулентности" unit="б/р" type="float" comment="" acc="5" howElements="1" idName="turb" />
+	   <param isDisplay="1" displayName="Подключене конуса к штанге" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	   </param>
+	   
+    </sio>
+	 <sio isDisplay="1" displayName="Рабочие параметры" idName = "Work" comment="---">
+     <struct isDisplay="1" howElements="1" unit="" comment="" displayName="Режим" idName="regime">
+        <param isDisplay="1" displayName="typeTouch" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="typeTouch" />
+        <param isDisplay="1" displayName="refCondition" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="refCondition" />
+        <param isDisplay="1" displayName="pShtanga" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="pShtanga" />
+		<param isDisplay="1" displayName="pRefuel" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="pRefuel" />
+		<param isDisplay="1" displayName="pRefSwitch" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="pRefSwitch" />
+		<param isDisplay="1" displayName="pRI" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="pRI" />
+		<param isDisplay="1" displayName="fix" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="fix" />
+		<param isDisplay="1" displayName="pBodyX" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="pBodyX" />
+		<param isDisplay="1" displayName="pBodyH" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="pBodyH" />
+		<param isDisplay="1" displayName="pBodyZ" unit="м/с" type="uint8_t" comment="" acc="5" howElements="1" idName="pBodyZ" />
+  
+	  </struct>
+	  <param isDisplay="1" displayName="DHCONE" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="DHCONE" />
+	  <param isDisplay="1" displayName="Z_TUBE" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="Z_TUBE" />
+	  <param isDisplay="1" displayName="DHTUBE" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="DHTUBE" />
+	  <param isDisplay="1" displayName="dHturb" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dHturb" />
+	  <param isDisplay="1" displayName="dZturb" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dZturb" />
+	  <param isDisplay="1" displayName="dCone" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dCone" />
+	  <param isDisplay="1" displayName="dLP" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dLP" />
+	  <param isDisplay="1" displayName="time" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="time" />
+	  <param isDisplay="1" displayName="dXconeT" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dXconeT" />
+	  <param isDisplay="1" displayName="dXconeT0" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dXconeT0" />
+	  <param isDisplay="1" displayName="timeDXconeT0" unit="м/с" type="uint32_t" comment="" acc="5" howElements="1" idName="timeDXconeT0" />
+	   <param isDisplay="1" displayName="dConeX0_a" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dConeX0_a" />
+	   <param isDisplay="1" displayName="dCone0_a" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dCone0_a" />
+	  <param isDisplay="1" displayName="dCone_a" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dCone_a" />
+	  <param isDisplay="1" displayName="timeConeCone" unit="м/с" type="uint32_t" comment="" acc="5" howElements="1" idName="timeConeCone" />
+	  <param isDisplay="1" displayName="dXconeT2" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dXconeT2" />
+	  <param isDisplay="1" displayName="tShock" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="tShock" />
+	  <param isDisplay="1" displayName="dxConeShock" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dxConeShock" />
+	  <param isDisplay="1" displayName="dhConeShock" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dhConeShock" />
+	  <param isDisplay="1" displayName="dzConeShock" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="dzConeShock" />
+	  <param isDisplay="1" displayName="pdxConeShock" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="pdxConeShock" />
+	  <param isDisplay="1" displayName="pdhConeShock" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="pdhConeShock" />
+	  <param isDisplay="1" displayName="pdzConeShock" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="pdzConeShock" />
+	   <param isDisplay="1" displayName="da" unit="м/с" type="double" comment="" acc="5" howElements="1" idName="da" />
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="cone_p" idName="cone_p">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="cone_a" idName="cone_a">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	    <param isDisplay="1" displayName="pln_t" unit="" type="double" comment="" acc="5" howElements="1" idName="pln_t" />
+	 <param isDisplay="1" displayName="step" unit="" type="double" comment="" acc="5" howElements="1" idName="step" />
+	 <param isDisplay="1" displayName="dXProbe" unit="" type="double" comment="" acc="5" howElements="1" idName="dXProbe" />
+	 <param isDisplay="1" displayName="dXprobe0" unit="" type="double" comment="" acc="5" howElements="1" idName="dXprobe0" />
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="probe_upaz" idName="probe_upaz">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="v_probe_upaz" idName="v_probe_upaz">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="a_probe_upaz" idName="a_probe_upaz">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	   <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="cone_upaz" idName="cone_upaz">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	   <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="cone_upaz_calc" idName="cone_upaz_calc">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	   <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="dc" idName="dc">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	   <param isDisplay="1" displayName="ltube" unit="" type="double" comment="" acc="5" howElements="1" idName="ltube" />
+	 <param isDisplay="1" displayName="RPlaneX" unit="" type="double" comment="" acc="5" howElements="1" idName="RPlaneX" />
+	 <param isDisplay="1" displayName="Tc" unit="" type="double" comment="" acc="5" howElements="1" idName="Tc" />
+	 <param isDisplay="1" displayName="CCt" unit="" type="double" comment="" acc="5" howElements="1" idName="CCt" />
+	 <param isDisplay="1" displayName="CCtCone" unit="" type="double" comment="" acc="5" howElements="1" idName="CCtCone" />
+	 <param isDisplay="1" displayName="dZBody" unit="" type="double" comment="" acc="5" howElements="1" idName="dZBody" />
+	 <param isDisplay="1" displayName="dXBody" unit="" type="double" comment="" acc="5" howElements="1" idName="dXBody" />
+	 <param isDisplay="1" displayName="dHBody" unit="" type="double" comment="" acc="5" howElements="1" idName="dHBody" />
+	 <param isDisplay="1" displayName="dZBodyCC" unit="" type="double" comment="" acc="5" howElements="1" idName="dZBodyCC" />
+	 <param isDisplay="1" displayName="dXBodyCC" unit="" type="double" comment="" acc="5" howElements="1" idName="dXBodyCC" />
+	 <param isDisplay="1" displayName="dHBodyCC" unit="" type="double" comment="" acc="5" howElements="1" idName="dHBodyCC" />
+	 <param isDisplay="1" displayName="red_light" unit="" type="uint8_t" comment="" acc="5" howElements="1" idName="red_light" />
+	 <param isDisplay="1" displayName="red_light_blink" unit="" type="uint8_t" comment="" acc="5" howElements="1" idName="red_light_blink" />
+	 <param isDisplay="1" displayName="green_light" unit="" type="uint8_t" comment="" acc="5" howElements="1" idName="green_light" />
+	 <param isDisplay="1" displayName="green_light_blink" unit="" type="uint8_t" comment="" acc="5" howElements="1" idName="green_light_blink" />
+	 <param isDisplay="1" displayName="yellow_light" unit="" type="uint8_t" comment="" acc="5" howElements="1" idName="yellow_light" />
+	 <param isDisplay="1" displayName="yellow_light_blink" unit="" type="uint8_t" comment="" acc="5" howElements="1" idName="yellow_light_blink" />
+	 <param isDisplay="1" displayName="lam_geo_con" unit="" type="double" comment="" acc="5" howElements="1" idName="lam_geo_con" />
+	 <param isDisplay="1" displayName="fi_geo_con" unit="" type="double" comment="" acc="5" howElements="1" idName="fi_geo_con" />
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="cone_g_upaz" idName="cone_g_upaz">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="cone_g_probe" idName="cone_g_probe">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	  <struct isDisplay="1" howElements="1" unit="вектор" comment="" displayName="cone_g_plane" idName="cone_g_plane">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	<param isDisplay="1" displayName="AngV" unit="" type="double" comment="" acc="5" howElements="1" idName="AngV" />
+	<param isDisplay="1" displayName="AngH" unit="" type="double" comment="" acc="5" howElements="1" idName="AngH" />
+	<param isDisplay="1" displayName="Atrv" unit="" type="double" comment="" acc="5" howElements="1" idName="Atrv" />
+	<param isDisplay="1" displayName="Atrvt" unit="" type="double" comment="" acc="5" howElements="1" idName="Atrvt" />
+	<param isDisplay="1" displayName="Atrv_out" unit="" type="double" comment="" acc="5" howElements="1" idName="Atrv_out" />
+	<param isDisplay="1" displayName="Atrvt_out" unit="" type="double" comment="" acc="5" howElements="1" idName="Atrvt_out" />
+	<param isDisplay="1" displayName="gamma_out" unit="" type="double" comment="" acc="5" howElements="1" idName="gamma_out" />
+	<param isDisplay="1" displayName="dxct" unit="" type="double" comment="" acc="5" howElements="1" idName="dxct" />
+	  <struct isDisplay="1" howElements="53" unit="вектор" comment="" displayName="tube_upaz" idName="tube_upaz">
+        <param isDisplay="1" displayName="x" unit="" type="double" comment="" acc="5" howElements="1" idName="x" />
+        <param isDisplay="1" displayName="y" unit="" type="double" comment="" acc="5" howElements="1" idName="y" />
+        <param isDisplay="1" displayName="z" unit="" type="double" comment="" acc="5" howElements="1" idName="z" />
+      </struct>
+	<param isDisplay="1" displayName="L" unit="" type="int" comment="" acc="5" howElements="1" idName="L" />
+	<param isDisplay="1" displayName="tInt" unit="" type="double" comment="" acc="5" howElements="1" idName="tInt" />
+	<param isDisplay="1" displayName="WyC" unit="" type="double" comment="" acc="5" howElements="1" idName="WyC" />
+	<param isDisplay="1" displayName="WzC" unit="" type="double" comment="" acc="5" howElements="1" idName="WzC" />
+			 
+	 
+	 
+    </sio>
+  </pmodule>
+   <pmodule isDisplay="1" displayName="УПАЗ(цент)"  idName="UPAZ_C" comment="---">
+    <sio isDisplay="1" displayName="Настроечные параметры" idName = "Setup" comment="---">
+      <param isDisplay="1" displayName="Турбулентность" unit="признак" type="uint8_t" comment="Турбулентность" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>     
+	  <param isDisplay="1" displayName="Колебания конуса" unit="признак" type="uint8_t" comment="Колебания конуса" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param> 
+	  <param isDisplay="1" displayName="Аэродинамический сдвиг" unit="признак" type="uint8_t" comment="Аэродинамический сдвиш" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>
+	  <param isDisplay="1" displayName="Касание конуса" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>
+	   <param isDisplay="1" displayName="Выключение УПАЗа" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	   </param>
+	   <param isDisplay="1" displayName="Масштаб турбулентности" unit="б/р" type="float" comment="" acc="5" howElements="1" idName="turb" />
+	   <param isDisplay="1" displayName="Подключене конуса к штанге" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	   </param>
+    </sio>
+  </pmodule>
+   <pmodule isDisplay="1" displayName="УПАЗ(прав)"  idName="UPAZ_R" comment="---">
+    <sio isDisplay="1" displayName="Настроечные параметры" idName = "Setup" comment="---">
+      <param isDisplay="1" displayName="Турбулентность" unit="признак" type="uint8_t" comment="Турбулентность" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>     
+	  <param isDisplay="1" displayName="Колебания конуса" unit="признак" type="uint8_t" comment="Колебания конуса" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param> 
+	  <param isDisplay="1" displayName="Аэродинамический сдвиг" unit="признак" type="uint8_t" comment="Аэродинамический сдвиш" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>
+	  <param isDisplay="1" displayName="Касание конуса" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	  </param>
+	   <param isDisplay="1" displayName="Выключение УПАЗа" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	   </param>
+	   <param isDisplay="1" displayName="Масштаб турбулентности" unit="б/р" type="float" comment="" acc="5" howElements="1" idName="turb" />
+	   <param isDisplay="1" displayName="Подключене конуса к штанге" unit="признак" type="uint8_t" comment="Касание конусом конуса самолета" acc="5" howElements="1" idName="turb" >
+		    <enum name="Вкл" value="1"></enum>
+            <enum name="Откл" value="0" /> 
+	   </param>
+    </sio>
+  </pmodule>
+</data>

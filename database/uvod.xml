@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<data>
+       <param isDisplay="1" displayName="Dbal" unit="рад" type="double" comment="" acc="5" howElements="1" idName="Dbal" />
+	  <param isDisplay="1" displayName="Db" unit="рад" type="double" comment="" acc="5" howElements="1" idName="Db" />
+	  <param isDisplay="1" displayName="Hmin" unit="рад" type="double" comment="" acc="5" howElements="1" idName="Hmin" />
+	  <param isDisplay="1" displayName="Hmg" unit="рад" type="double" comment="" acc="5" howElements="1" idName="Hmg" />
+	  <param isDisplay="1" displayName="Hsys" unit="рад" type="double" comment="" acc="5" howElements="1" idName="Hsys" />
+	  <param isDisplay="1" displayName="Dtek" unit="рад" type="double" comment="" acc="5" howElements="1" idName="Dtek" />
+	  <param isDisplay="1" displayName="Vc" unit="рад" type="double" comment="" acc="5" howElements="1" idName="Vc" />
+	  <param isDisplay="1" displayName="unt" unit="рад" type="double" comment="" acc="5" howElements="1" idName="unt" />
+	  <param isDisplay="1" displayName="esc" unit="рад" type="int" comment="" acc="5" howElements="1" idName="esc" />
+	  <param isDisplay="1" displayName="t" unit="рад" type="float" comment="" acc="5" howElements="1" idName="t" />
+	  <param isDisplay="1" displayName="index" unit="рад" type="int" comment="" acc="5" howElements="1" idName="index" />
+	  <param isDisplay="1" displayName="codeASP" unit="код" type="int" comment="" acc="5" howElements="1" idName="codeASP" />	  
+
+</data>
